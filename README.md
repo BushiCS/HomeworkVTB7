@@ -17,6 +17,9 @@ System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка начал�
 System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
 }
 }
+```
+
+```java
 public class Car implements Runnable {
 private static int CARS_COUNT;
 static {
@@ -51,6 +54,9 @@ race.getStages().get(i).go(this);
 }
 }
 }
+```
+
+```java
 public abstract class Stage {
 protected int length;
 protected String description;
@@ -59,6 +65,9 @@ return description;
 }
 public abstract void go(Car c);
 }
+```
+
+```java
 public class Road extends Stage {
 public Road(int length) {
 this.length = length;
@@ -75,6 +84,9 @@ e.printStackTrace();
 }
 }
 }
+```
+
+```java
 public class Tunnel extends Stage {
 public Tunnel() {
 this.length = 80;
@@ -99,6 +111,9 @@ e.printStackTrace();
 }
 }
 }
+```
+
+```java
 public class Race {
 private ArrayList<Stage> stages;
 public ArrayList<Stage> getStages() { return stages; }
